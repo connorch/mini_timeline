@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Paper, makeStyles, Typography, TextField, Button } from '@material-ui/core';
+import moment from 'moment';
 
 const AddLogForm = ({ addLog }) => {
   const classes = useStyles();
@@ -8,7 +9,7 @@ const AddLogForm = ({ addLog }) => {
   const [message, setMessage] = useState('');
 
   const handleAddLog = () => {
-    addLog(title, message);
+    addLog(title, message, moment());
     setTitle('');
     setMessage('');
   }
