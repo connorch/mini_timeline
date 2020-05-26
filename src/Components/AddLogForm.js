@@ -23,6 +23,7 @@ const AddLogForm = ({ addLog }) => {
           label="Log Title"
           id="log_title"
           name="log_title"
+          type="text"
           fullWidth
           className={classes.formField}
           value={title}
