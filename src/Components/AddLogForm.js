@@ -16,9 +16,10 @@ const AddLogForm = ({ addLog }) => {
 
   return (
     <Paper className={classes.paper}>
-      <Typography variant="h4">Add new log</Typography>
+      <Typography variant="h4">Add new log.</Typography>
       <form className={classes.form}>
         <TextField
+          required
           variant="outlined"
           label="Log Title"
           id="log_title"
@@ -43,12 +44,9 @@ const AddLogForm = ({ addLog }) => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <Button
-          variant="contained"
-          onClick={handleAddLog}
-        >
+        <Button variant="contained" onClick={handleAddLog}>
           Submit Log
-          </Button>
+        </Button>
       </form>
     </Paper>
   );

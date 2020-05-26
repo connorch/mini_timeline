@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import TimelineCardForm from './AddLogForm';
 import { makeStyles } from '@material-ui/core';
 import TimelineCard from './TimelineCard';
+import Search from './Search';
 
 const Timeline = () => {
   const classes = useStyles();
-
   const [logs, setLogs] = useState([]);
+  const [searchFilter, setSearchFilter] = useState('');
 
   const addLog = (title, message, moment) => {
     setLogs([
@@ -21,10 +22,16 @@ const Timeline = () => {
     setLogs(clone);
   }
 
+  const getFilteredLogs = () => searchFilter.length > 0 ? logs.filter(({ title }) => title.includes(searchFilter)) : logs;
+
   return (
     <div className={classes.root}>
       <TimelineCardForm addLog={addLog} />
-      {logs.map(({ title, message, moment }, index) => (
+      <Search
+        searchFilter={searchFilter}
+        setSearchFilter={setSearchFilter}
+      />
+      {getFilteredLogs().map(({ title, message, moment }, index) => (
         <TimelineCard
           key={moment}
           title={title}
