@@ -41,9 +41,11 @@ const AddLogForm = ({ addLog }) => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <Button variant="contained" type="submit" color="primary" onClick={handleAddLog}>
-          Submit Log
-        </Button>
+        <div className={classes.submitButton}>
+          <Button variant="contained" type="submit" color="primary" onClick={handleAddLog}>
+            Submit Log
+          </Button>
+        </div>
       </form>
     </Paper>
   );
@@ -59,6 +61,10 @@ const useStyles = makeStyles(theme => ({
   },
   formField: {
     marginBottom: 10
+  },
+  submitButton: {
+    display: 'flex',
+    justifyContent: 'flex-end'
   }
 }));
 
