@@ -48,7 +48,9 @@ const Timeline = () => {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: 100,
+    padding: 50,
+    maxWidth: 800,
+    margin: '0 auto',
     [theme.breakpoints.down('xs')]: {
       padding: 10
     },
