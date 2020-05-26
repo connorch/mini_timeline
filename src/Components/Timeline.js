@@ -26,7 +26,7 @@ const Timeline = () => {
       <TimelineCardForm addLog={addLog} />
       {logs.map(({ title, message, moment }, index) => (
         <TimelineCard
-          key={index}
+          key={moment}
           title={title}
           message={message}
           moment={moment}
