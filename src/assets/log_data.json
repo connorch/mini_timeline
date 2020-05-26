@@ -1,0 +1,37 @@
+[
+  {
+    "title": "New Alarm Created",
+    "message": "A new alarm 'Low Apparent Power' has been created"
+  },
+  {
+    "title": "Alarm high energy consumption is triggered",
+    "message": "Energy consumption of this asset is high. Please resolve this issue ASAP"
+  },
+  {
+    "title": "New Alarm Created",
+    "message": "A new alarm 'Low Apparent Power' has been created"
+  },
+  {
+    "title": "Alarm energy output low is triggered",
+    "message": "Energy output of this asset is low.  Please resolve this issue ASAP"
+  },
+  {
+    "title": "New Alarm Created",
+    "message": "A new alarm 'Inspection due' has been created"
+  },
+  {
+    "title": "Ala"
+  },
+  {
+    "title": "New Alarm Created",
+    "message": "A new alarm 'High Apparent Power' has been created"
+  },
+  {
+    "title": "New Alarm Created",
+    "message": "A new alarm 'No power output' has been created"
+  },
+  {
+    "title": "New Alarm Created",
+    "message": "A new alarm 'asset malfunction' has been created"
+  }
+]
