@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, TextField, makeStyles, Button } from '@material-ui/core';
+import { Paper, TextField, makeStyles } from '@material-ui/core';
 
 const Search = ({ searchFilter, setSearchFilter }) => {
   const classes = useStyles();
@@ -28,7 +28,8 @@ const Search = ({ searchFilter, setSearchFilter }) => {
 const useStyles = makeStyles(theme => ({
   paper: {
     padding: 20,
-    marginTop: 20
+    marginTop: 20,
+    marginBottom: 40
   }
 }));
 

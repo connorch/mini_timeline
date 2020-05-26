@@ -17,13 +17,11 @@ const AddLogForm = ({ addLog }) => {
   return (
     <Paper className={classes.paper}>
       <Typography variant="h4">Add new log.</Typography>
-      <form className={classes.form}>
+      <form className={classes.form} onSubmit={e => e.preventDefault()}>
         <TextField
-          required
           variant="outlined"
           label="Log Title"
-          id="log_title"
-          name="log_title"
+          name="title"
           type="text"
           fullWidth
           className={classes.formField}
@@ -33,8 +31,7 @@ const AddLogForm = ({ addLog }) => {
         <TextField
           variant="outlined"
           label="Log Message"
-          id="log_message"
-          name="log_message"
+          name="message"
           type="text"
           fullWidth
           multiline
@@ -44,7 +41,7 @@ const AddLogForm = ({ addLog }) => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <Button variant="contained" onClick={handleAddLog}>
+        <Button variant="contained" type="submit" color="primary" onClick={handleAddLog}>
           Submit Log
         </Button>
       </form>
@@ -54,7 +51,7 @@ const AddLogForm = ({ addLog }) => {
 
 const useStyles = makeStyles(theme => ({
   paper: {
-    padding: 20
+    padding: 20,
   },
   form: {
     paddingTop: 10,

@@ -3,10 +3,11 @@ import TimelineCardForm from './AddLogForm';
 import { makeStyles } from '@material-ui/core';
 import TimelineCard from './TimelineCard';
 import Search from './Search';
+import getLogData from '../getLogData';
 
 const Timeline = () => {
   const classes = useStyles();
-  const [logs, setLogs] = useState([]);
+  const [logs, setLogs] = useState(getLogData());
   const [searchFilter, setSearchFilter] = useState('');
 
   const addLog = (title, message, moment) => {
@@ -50,7 +51,7 @@ const useStyles = makeStyles(theme => ({
     padding: 100,
     [theme.breakpoints.down('xs')]: {
       padding: 10
-    }
+    },
   }
 }));
 
