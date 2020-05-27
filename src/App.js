@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core';
 import { blueGrey } from '@material-ui/core/colors';
 import BackgroundImage from './assets/tagup_background.png';
 
-console.log(BackgroundImage);
 function App() {
   const classes = useStyles();
   return (

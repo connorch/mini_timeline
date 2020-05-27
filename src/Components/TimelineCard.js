@@ -3,7 +3,7 @@ import { Paper, Typography, makeStyles, Grid, IconButton, Collapse } from '@mate
 import DeleteIcon from '@material-ui/icons/Delete';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
 
-const TimelineCard = ({ title, message, moment, index, deleteLog }) => {
+const TimelineCard = ({ title, message, moment, urgency = {}, index, deleteLog }) => {
   const classes = useStyles();
 
   const [isVisible, setIsVisible] = useState(false);
@@ -25,7 +25,7 @@ const TimelineCard = ({ title, message, moment, index, deleteLog }) => {
   return (
     <>
       <Collapse in={isVisible} onExited={() => deleteLog(index)}>
-        <Paper className={classes.paper}>
+        <Paper className={classes.paper} style={{ backgroundColor: urgency.color || null }}>
           <Grid container justify="space-between">
             <Grid item>
               <Typography variant="h5">{title}</Typography>

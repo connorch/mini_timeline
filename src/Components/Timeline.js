@@ -10,9 +10,9 @@ const Timeline = () => {
   const [logs, setLogs] = useState(fetchLogData());
   const [searchFilter, setSearchFilter] = useState('');
 
-  const addLog = (title, message, moment) => {
+  const addLog = (title, message, urgency, moment) => {
     setLogs([
-      { title, message, moment },
+      { title, message, urgency, moment },
       ...logs,
     ]);
   }
@@ -32,12 +32,13 @@ const Timeline = () => {
         searchFilter={searchFilter}
         setSearchFilter={setSearchFilter}
       />
-      {getFilteredLogs().map(({ title, message, moment }, index) => (
+      {getFilteredLogs().map(({ title, message, moment, urgency }, index) => (
         <TimelineCard
           key={moment}
           title={title}
           message={message}
           moment={moment}
+          urgency={urgency}
           index={index}
           deleteLog={deleteLog}
         />

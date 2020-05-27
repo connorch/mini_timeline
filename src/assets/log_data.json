@@ -1,34 +1,97 @@
 [
   {
     "title": "New Alarm Created",
-    "message": "A new alarm 'Low Apparent Power' has been created"
+    "message": "A new alarm 'Low Apparent Power' has been created",
+    "urgency": 1
   },
   {
     "title": "Alarm high energy consumption is triggered",
-    "message": "Energy consumption of this asset is high. Please resolve this issue ASAP"
+    "message": "Energy consumption of this asset is high. Please resolve this issue ASAP",
+    "urgency": {
+      "id": 3,
+      "name": "Critical",
+      "color": "#ffcdd2"
+    }
+  },
+  {
+    "title": "Alarm high energy consumption is triggered",
+    "message": "Energy consumption of this asset is high. Please resolve this issue ASAP",
+    "urgency": {
+      "id": 3,
+      "name": "Critical",
+      "color": "#ffcdd2"
+    }
+  },
+  {
+    "title": "Alarm high energy consumption is triggered",
+    "message": "Energy consumption of this asset is high. Please resolve this issue ASAP",
+    "urgency": {
+      "id": 3,
+      "name": "Critical",
+      "color": "#ffcdd2"
+    }
+  },
+  {
+    "title": "Alarm high energy consumption is triggered",
+    "message": "Energy consumption of this asset is high. Please resolve this issue ASAP",
+    "urgency": {
+      "id": 3,
+      "name": "Critical",
+      "color": "#ffcdd2"
+    }
   },
   {
     "title": "New Alarm Created",
-    "message": "A new alarm 'Low Apparent Power' has been created"
+    "message": "A new alarm 'Low Apparent Power' has been created",
+    "urgency": {
+      "id": 1,
+      "name": "Normal",
+      "color": null
+    }
   },
   {
     "title": "Alarm energy output low is triggered",
-    "message": "Energy output of this asset is low.  Please resolve this issue ASAP"
+    "message": "Energy output of this asset is low.  Please resolve this issue ASAP",
+    "urgency": {
+      "id": 2,
+      "name": "High",
+      "color": "#ffe0b2"
+    }
   },
   {
     "title": "New Alarm Created",
-    "message": "A new alarm 'Inspection due' has been created"
+    "message": "A new alarm 'Inspection due' has been created",
+    "urgency": {
+      "id": 1,
+      "name": "Normal",
+      "color": null
+    }
   },
   {
     "title": "New Alarm Created",
-    "message": "A new alarm 'High Apparent Power' has been created"
+    "message": "A new alarm 'High Apparent Power' has been created",
+    "urgency": {
+      "id": 1,
+      "name": "Normal",
+      "color": null
+    }
   },
   {
     "title": "New Alarm Created",
-    "message": "A new alarm 'No power output' has been created"
+    "message": "A new alarm 'No power output' has been created",
+    "urgency": {
+      "id": 1,
+      "name": "Normal",
+      "color": null
+    }
   },
   {
     "title": "New Alarm Created",
-    "message": "A new alarm 'asset malfunction' has been created"
+    "message": "A new alarm 'asset malfunction' has been created",
+    "urgency": {
+      "id": 1,
+      "name": "Normal",
+      "color": null
+    }
   }
 ]
