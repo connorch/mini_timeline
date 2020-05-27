@@ -18,6 +18,9 @@ const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: blueGrey[900], //fallback
     backgroundImage: `url(${BackgroundImage})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
     minHeight: '100vh'
   }
 }))

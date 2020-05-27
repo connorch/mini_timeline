@@ -3,11 +3,11 @@ import TimelineCardForm from './AddLogForm';
 import { makeStyles } from '@material-ui/core';
 import TimelineCard from './TimelineCard';
 import Search from './Search';
-import getLogData from '../getLogData';
+import fetchLogData from '../fetchLogData';
 
 const Timeline = () => {
   const classes = useStyles();
-  const [logs, setLogs] = useState(getLogData());
+  const [logs, setLogs] = useState(fetchLogData());
   const [searchFilter, setSearchFilter] = useState('');
 
   const addLog = (title, message, moment) => {
